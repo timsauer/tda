@@ -21,11 +21,11 @@ X=X+.1*randn(size(X));
 %%% Delays + PCA %%%
 X2 = [X(:,9:end); X(:,5:end-4); X(:,1:end-8)];
 X2=dec(X2,300);
-[Xpca,s] = PCA(X2,10);
+%[Xpca,s] = PCA(X2,10);
 [Xpca,s] = PCA(X2,2*(n1+n2));
 % 
 figure(12);
-plot3(Xpca(1,:),Xpca(2,:),Xpca(3,:)+Xpca(4,:),'.','MarkerSize',10);pause
+plot3(Xpca(1,:),Xpca(2,:),Xpca(3,:)+Xpca(4,:),'.','MarkerSize',20);pause
 title('PCA (after 3 delays)','Fontsize',18);
 Q=[1 1 0 0;1 -1 0 0;0 0 1 1;0 0 1 -1];Q=Q/sqrt(2);
 %Xpca(3:6,:)=Q*Xpca(3:6,:);
