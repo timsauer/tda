@@ -3,7 +3,7 @@ t=(1:len);
 n1=9;n2=4;a1=rand(n1,1);a2=rand(n2,1);
 % X=[sin(.2*t+a(1));sin(.2*t+a(2));sin(.2*t+a(3));
 %     1*sin(.2*sqrt(2)/3*t+b(1));1*sin(.2*sqrt(2)/3*t+b(2));1*sin(.2*sqrt(2)/3*t+b(3))];
-f1=1;f2=sqrt(2);
+f1=1;f2=sqrt(2);f2=1.28;
 X=[sin(repmat(f1*t,n1,1)+repmat(a1,1,len));sin(repmat(f2*t,n2,1)+repmat(a2,1,len))];
 % X=[sin(f1*t+a(1));sin(f1*t+a(2));sin(f1*t+a(3));
 % sin(f2*t+b(1));sin(f2*t+b(2));sin(f2*t+b(3))];
