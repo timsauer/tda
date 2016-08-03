@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+%\usepackage{latexsym,times,epsf}
+\usepackage{latexsym,amsmath,amsrefs,amsfonts,amssymb,graphicx}
+\usepackage[small,bf]{caption}
+\usepackage[large]{subfigure}
+%\pagestyle{headings}
+%\pagestyle{empty}
+\setlength{\topmargin}{-.6in} \setlength{\textheight}{9in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\def\bc{\begin{center}}
+\def\ec{\end{center}}
+\def\be{\begin{enumerate}}
+\def\ee{\end{enumerate}}
+\def\r{\rho}
+\def\h{\Theta}
+\def\Bbb{\bf}
+\def\urltilda{\kern -.15em\lower .7ex\hbox{\~{}}\kern .04em}
+\renewcommand{\refname}{}
+\usepackage{indentfirst}
+
+\addtolength{\abovecaptionskip}{0mm}
+\addtolength{\belowcaptionskip}{0mm}
+\addtolength{\floatsep}{-1mm}
+\addtolength{\intextsep}{-1mm}
+\addtolength{\textfloatsep}{-5mm}
+
+%\input amssym.def
+%\input amssym
+
+\usepackage{sectsty}
+\sectionfont{\large}
+\subsectionfont{\normalsize}
+
+\setlength{\captionmargin}{10pt}
+\begin{document}
+\renewcommand{\rightmark}{Project Description}
+%\thispagestyle{plain}
+
+
+\bc \Large\bf Section: \\ \Large Pattern identification and steering for \\ spatio-temporal and network dynamics
+\ec
+%\bc Timothy Sauer\\Department of Mathematics \\ George Mason
+%University \\ Fairfax, VA 22030\\ tsauer@gmu.edu
+%\ec
+\bc \large\bf Project Summary \ec
+
+\begin{itemize}
+	\item {\bf Background}: Attractor clustering for pattern detection
+	\begin{itemize}
+		\item DMDC
+		\item CkNN for attractor clustering
+		\item Application to Liquid Crystal data
+		\item Preliminary study of geometric pattern identification (dim/vol)
+	\end{itemize}
+	\item {\bf Observability}: Extension of DMDC to neuron data and spike trains
+	\begin{itemize}
+		\item Introduce observability condition number for Takens embedding theorem
+		\item Empirical estimation of observability conditioning?
+		\item Improving conditioning through convolution/low-pass filtering?
+	\end{itemize}
+	\item {\bf Pattern identification}
+	\begin{itemize}
+		\item Step 1: {\bf Attractor Discrimination}: DMDC+CkNN reconstructs/separates attractors
+		\item Step 2: {\bf Pattern Identification}:  Separate attractors may represent similar \emph{patterns}
+		\begin{itemize}
+			\item {\it Topological}: Attractors with the same topology have a similar dynamical constraints at a very coarse level
+			\item {\it Geometric}: Attractors with the same geometry only differ in how the pattern evolves dynamically
+			\item {\it Dynamical}: Attractors with the same dynamical properties (Lyapunov spectrum and stochastic forcing) represent identical patterns
+		\end{itemize}
+		\item Step 3: {\bf Steering}: Move to nearest attractor with desired pattern
+		\begin{itemize}
+			\item Transition probabilities
+			\item Basin identification for pattern classes?
+			\item State space exploration?
+		\end{itemize}
+	\end{itemize}
+	\item {\bf Application to Spatiotemporal and Network Dynamics}
+	\begin{itemize}
+		\item {\bf Diffusion distance}: Hierarchical metric using a \emph{dictionary} built from data subsets which are localized in the spatial or network structure.  Can be designed to be invariant to spatial/network transformations (translation, rotation, ect.).
+		\item {\bf Nematic Liquid Crystals}: 
+		\item {\bf Neuronal Networks}: 
+	\end{itemize}
+
+\end{itemize}
+
+
+\newpage
+
+\setcounter{page}{1}
+
+\bc \large\bf  Section: \\ Pattern identification and steering for \\ spatio-temporal and network dynamics
+
+\ec
+
+\section{Background and motivation}
+
+
+
+\subsection{Preliminary research: Attractor clustering for pattern detection}
+
+
+
+\bc \Large\bf References Cited \ec
+\setcounter{page}{1}
+\bibliographystyle{plain}
+\bibliography{bigdata}
+
+
+%\setlength{\textwidth}{5.9in}
+%\setlength{\oddsidemargin}{.3in}
+
+
+
+\end{document}
